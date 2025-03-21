@@ -1,0 +1,54 @@
+-> CLASSIFICATION: It is a supervised ML technique used to categorize data into predefined classes or labels based on input features. It learns from labeled training data and applies this knowledge to classify new, unseen data points. Common classification algorithms include Logistic Regression, Decision Trees, Random Forest, Support Vector Machines (SVM), and Neural Networks.
+
+
+1. Binary Classification
+Involves two possible classes (e.g., Yes/No, Spam/Not Spam, Pass/Fail).
+Example: Email classification as Spam or Not Spam.
+Common Algorithms:
+	Logistic Regression
+	Support Vector Machine (SVM)
+	Decision Trees
+
+->DECISION BOUNDARY: To predict which class a data point belongs to, a decision boundary is a hypersurface that separates different classes in a classification model. It is determined by the learned model and helps classify new data points by 	assigning them to the class on the corresponding side of the boundary. Decision boundaries can be linear (e.g., Logistic Regression, SVM with a linear kernel) or non-linear (e.g., Decision Trees, Neural Networks, SVM with non-linear kernels). 
+
+->DECISION TREE: A Decision Tree is a flowchart like struct where:
+		- each internal node represents a decision based on a feature
+		- each branch represents the outcome of that decision
+		- each leaf node represents the final class label (for classification)
+		
+		   [Root Node]
+                    Feature A?
+                  /           \
+             Yes /             \ No
+                /               \
+        [Decision Node]       [Decision Node]
+       Feature B?             Feature C?
+      /         \             /         \
+   Yes          No        Yes           No
+   /              \        /              \
+[Leaf]          [Leaf]  [Leaf]        [Leaf]
+(Class 1)    (Class 2)  (Class 1)    (Class 2)
+
+->IMPURITY , ENTRONPY , IG(info. gain):
+	. entropy is the measure of randomness or impurity contained in a dataset.
+	. if the entropy is 0 , all samples of a node belong to the same class (not good for training dataset.)
+	. Entropy Formula:
+
+	H(S) = sigma(tends from i=1 to c) -p_i* log_2(p_i)
+
+	Where:
+	H(S) is the entropy of the dataset S.
+	c is the number of classes.
+	p_i is the probability of a sample belonging to class i.
+	log_2 is the logarithm to base 2.
+
+	.INFORMATION GAIN measures how much "info." a feature gives us about the class. The IG is based on the decrease in the entropy 	after a dataset is split on an attribute. 
+-> steps to construct a decision tree:
+->RANDOM FOREST:
+	
+
+
+
+
+	
+
