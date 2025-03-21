@@ -1,0 +1,43 @@
+hyperparameter tuning in ML:
+	->necessary to choose before training a model
+	->hyperparameters in random forests 1.n_estimators , 2.max_depth,3. min_samples_split
+----Random search and grid search 
+ =>RS - randomly picked combinations, fast
+ =>GS - time taking , considers every possible combinations , slow
+
+SUPPORT VECTOR MACHINE:
+=>is a supervised machine learning algo. which can be used for both classification on regression.
+=>mostly used for classification
+=>it finds the best possible boundary (called as hyperplane) that maximizes the margin btwn. the 2 classes
+=>Hyperplane : in 2D , it's a line ; in 3D , it's a plane 
+
+->Maximal Margin Classifier: line is used to seperate data , when the data is easily seperable we use MMC
+	-support vectors are the closest data points to hyperplane. Hyperplane is drawn based on support vectors.
+	-MMC cannot be used if 2 classes cannot be seperable by a hyperplane.
+
+->Support Vector Classifier : wrongly predicted data can be included into margins , these margins are known as soft margins.
+
+	-example: when there are 2 categories obese and not obese but the sorting wasn't done properly so the obese consists of some  		not obese data and vice versa the wrongly classified data can be placed under the soft margins.
+	-SVC is a linear classifier , it cannot classify non linear seperable data.
+
+->Support Vector Machine : makes use of kernels
+ 	- 2 types : 1. linear SVM 2. Non-linear SVM
+	- linear kernel , polynomial kernel , sigmoid , 
+	- instead of using straight line , SVM uses a curve 
+	- in svm we need to add another dimension i.e. z , z = x^2 + y^2
+	- hyperplane is a plane parallel to x-axis at a certain z.
+	1. Linear Kernel equation : k(x_i,x_j) = x_i . x_j
+		example use cases : text classification
+	2. polynomial kernel : k(x_i,x_j) = (x_i . x_j + c)^d
+		example use cases : handwriting recognition , facial expression classification
+	3. radial basis function kernel : k(x_i,x_j) = e power (- gamma |x_i - x_j|^2)
+		example = image classification , biometric recognition
+	- tuning parameter of SVM , c- it is the regularization parameter . It allows you to decide how much you want to penalize 
+	- if c value is large , margins will be narrow and there will be fewer
+	- KERNEL : it specifies the kernel type to be used
+	- gamma - it is the kernel coefficient for the 'rbf' , 'poly' and 'sigmoid' , small gamma gives less complexity and larger 	gamma gives more complexity.
+	
+	
+	
+
+	
