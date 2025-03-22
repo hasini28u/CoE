@@ -1,0 +1,78 @@
+->TYPES OF LEARNING:
+  1.Supervised Learning
+  2.Unsupervised Learning
+  3.Reinforcement Learning
+->Why use unsupervised learning:
+  - used to find hidden structure of data
+  - works on unlabelled and uncategorised data 
+  - we do not always have input data with the corresponding output
+  ->Clustering : grouping the objects into clusters such that objects with most similarities remains into a group 
+      - commonalities btwn. the data objects and categorizes them as per the presence or absence of them
+  ->Association : used to find relationship btwn. the data 
+      -determines the set of items that occurs together in the dataset
+      - Ex : MARKET BASKET ANALYSIS
+->adv.
+  >used for more complex tasks as compared to supervised learning , we don't have labelled input data
+  >easy to get unlabelled data in comparision to labelled data.
+->disadv.
+  >
+
+
+K-means clustering:
+  1.unsupervised ML algorithm which groups the labelled dataset ublabeled dataset into different clusters
+  2.k-means clustering is a technique used to organise data into groups based on their similarity
+
+  =>how K-means clustering works?
+    Step-by-Step Explanation of K-Means
+    Step 1: Choose K (Number of Clusters)
+    Let’s assume we want to divide customers into 3 clusters (K=3) based on their income and spending score.
+    Step 2: Initialize Centroids
+    We randomly select 3 points as the initial cluster centroids.
+    Step 3: Assign Points to the Nearest Centroid
+    Each customer (data point) is assigned to the closest centroid using Euclidean distance.
+    For example:
+    Customers with low income & low spending form Cluster 1.
+    Customers with medium income & high spending form Cluster 2.
+    Customers with high income & moderate spending form Cluster 3.
+
+    Step 4: Update Centroids
+    Calculate the mean of all points in each cluster.
+    Move the centroid to the new mean position.
+    Repeat the assignment and update steps until centroids stop changing.
+
+    Final Output:
+    The algorithm stops when the centroids remain unchanged. Customers are now grouped into 3 segments, helping the mall target promotions more effectively.
+        
+Advantages:
+✔ Simple & Fast – Works well on large datasets.
+✔ Scalable – Can be used for big data clustering.
+✔ Efficient – Works best when clusters are well-separated.
+
+Disadvantages:
+✖ Requires K as input – You need to decide the number of clusters beforehand.
+✖ Sensitive to Outliers – Outliers can distort the cluster formation.
+✖ Assumes Spherical Clusters – Works best when clusters are circular and evenly sized.
+
+HIERARCHICAL clustering:
+  - it uses dendrogram
+  -2 types 1. top-down(divisive clustering) 2.bottom-up(agglomerative clustering)
+    1.Agglomerative Clustering is a type of Hierarchical Clustering where:
+    Each data point starts as its own cluster.
+    Clusters are iteratively merged based on similarity.
+    The process continues until all points belong to a specified number of clusters (n_clusters).
+    Unlike K-Means, Agglomerative Clustering does not require specifying cluster centroids. Instead, it builds a dendrogram (tree structure) to determine the hierarchy of clusters.
+  -linkage criteria :
+    1.single linkage
+    2.
+    3.Average linkage
+    4.Cetroid linkage
+Demographic Clustering:
+Demographic clustering is a technique used to group people based on demographic attributes such as:
+
+✔️ Age.
+✔️ Income.
+✔️ Marital Status.
+✔️ Household Size (Kids, Teenagers, etc.).
+✔️ Occupation, Education Level, Location (if available).
+
+This technique helps businesses, researchers, and policymakers identify patterns in different population segments.
